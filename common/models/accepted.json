@@ -17,6 +17,19 @@
       "model": "profile"
     }
   },
-  "acls": [],
+  "acls": [
+      {
+          "accessType": "READ",
+          "principalType": "ROLE",
+          "principalId": "$everyone",
+          "permission": "ALLOW"
+      },
+      {
+          "accessType": "WRITE",
+          "principalType": "ROLE",
+          "principalId": "$everyone",
+          "permission": "ALLOW"
+        }
+  ],
   "methods": {}
 }
