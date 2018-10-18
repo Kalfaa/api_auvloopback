@@ -8,11 +8,11 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "young": {
+    "passif": {
       "type": "belongsTo",
       "model": "profile"
     },
-    "old": {
+    "actif": {
       "type": "belongsTo",
       "model": "profile"
     }

@@ -9,7 +9,8 @@ module.exports = function enableAuthentication(server) {
     'profile',
     'messages',
     'rejected',
-    'accepted'
+    'accepted',
+    'subscription'
   ];
 
   ds.setMaxListeners(Infinity);

@@ -6,10 +6,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
     "old": {
       "type": "boolean",
       "required": true
@@ -42,25 +38,41 @@
       "type": "hasMany",
       "model": "profile",
       "as": "rejected",
-      "foreignKey": "oldId",
+      "foreignKey": "passif_id",
       "through": "rejected",
-      "keyThrough": "newId"
+      "keyThrough": "actif_id"
     },
     "accepted": {
       "type": "hasMany",
       "model": "profile",
       "as": "accepted",
-      "foreignKey": "newId",
+      "foreignKey": "passif_id",
       "through": "accepted",
-      "keyThrough": "oldId"
-  },
-    "messages":{
-        "type": "hasMany",
-        "model": "profile",
-        "as": "messages",
-        "foreignKey": "sender",
-        "through": "messages",
-        "keyThrough": "receiver"
+      "keyThrough": "actif_id"
+    },
+    "messages": {
+      "type": "hasMany",
+      "model": "profile",
+      "as": "messages",
+      "foreignKey": "sender",
+      "through": "messages",
+      "keyThrough": "receiver"
+    },
+    "subscriptions": {
+      "type": "hasOne",
+      "model": "subscription",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "profiles": {
+      "type": "hasOne",
+      "model": "profile",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [

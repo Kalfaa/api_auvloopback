@@ -21,28 +21,28 @@
   },
   "validations": [],
   "relations": {
-      "receiver":{
-          "type": "belongsTo",
-          "model": "profile"
-      },
-      "sender":{
-          "type":"belongsTo",
-          "model": "profile"
-      }
+    "receiver": {
+      "type": "belongsTo",
+      "model": "profile"
+    },
+    "sender": {
+      "type": "belongsTo",
+      "model": "profile"
+    }
   },
   "acls": [
-      {
-        "accessType": "READ",
-        "principalType": "ROLE",
-        "principalId": "$everyone",
-        "permission": "ALLOW"
-      },
-      {
-        "accessType": "WRITE",
-        "principalType": "ROLE",
-        "principalId": "$everyone",
-        "permission": "ALLOW"
-      }
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
   ],
   "methods": {}
 }
