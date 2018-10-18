@@ -33,7 +33,7 @@
   },
   "Role": {
     "dataSource": "db",
-    "public": false
+    "public": true
   },
   "profile": {
     "dataSource": "db",
