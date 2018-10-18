@@ -4,7 +4,7 @@
     "port": 3306,
     "url": "",
     "database": "auv_db",
-    "password": "1234",
+    "password": "",
     "name": "db",
     "user": "root",
     "connector": "mysql"
