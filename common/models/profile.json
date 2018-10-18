@@ -39,23 +39,27 @@
   "validations": [],
   "relations": {
     "rejected": {
-      "as": "rejected",
       "type": "hasMany",
       "model": "profile",
-      "through": "rejected",
-      "foreignKey": "oldId",
-      "keyThrough": "newId"
+      "foreignKey": "profile_id",
+      "options": {
+        "nestRemoting": true
     },
-    "accepted": {
-      "as": "accepted",
-      "type": "hasMany",
-      "model": "profile",
-      "through": "accepted",
-      "foreignKey": "newId",
-      "keyThrough": "oldId"
+    "profile": {
+        "type": "belongsTo",
+        "model": "profile",
+        "foreignKey": "profile_id"
+    }
+
     }
   },
   "acls": [
+  {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
   ],
   "methods": {}
 }
