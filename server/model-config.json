@@ -38,5 +38,13 @@
   "profile": {
     "dataSource": "db",
     "public": true
+  },
+  "accepted": {
+    "dataSource": "db",
+    "public": false
+  },
+  "rejected": {
+    "dataSource": "db",
+    "public": false
   }
 }

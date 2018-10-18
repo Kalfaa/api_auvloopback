@@ -37,7 +37,24 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "rejected": {
+      "as": "rejected",
+      "type": "hasMany",
+      "model": "profile",
+      "through": "rejected",
+      "foreignKey": "oldId",
+      "keyThrough": "newId"
+    },
+    "accepted": {
+      "as": "accepted",
+      "type": "hasMany",
+      "model": "profile",
+      "through": "accepted",
+      "foreignKey": "newId",
+      "keyThrough": "oldId"
+    }
+  },
   "acls": [
     {
       "accessType": "WRITE",

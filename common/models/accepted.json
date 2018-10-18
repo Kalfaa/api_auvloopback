@@ -1,0 +1,22 @@
+{
+  "name": "accepted",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "young": {
+      "type": "belongsTo",
+      "model": "profile"
+    },
+    "old": {
+      "type": "belongsTo",
+      "model": "profile"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
