@@ -38,21 +38,29 @@
   "profile": {
     "dataSource": "db",
     "public": true
-  },
-  "rejected": {
+},
+"rejected":{
     "dataSource": "db",
     "public": true
-  },
-  "accepted": {
+},
+
+"accepted":{
     "dataSource": "db",
     "public": true
+},
+
+  "messages":{
+      "dataSource": "db",
+      "public": true
   },
-  "messages": {
-    "dataSource": "db",
-    "public": true
+
+  "subscription":{
+      "dataSource": "db",
+      "public": true
   },
-  "subscription": {
-    "dataSource": "db",
+
+  "container": {
+    "dataSource": "file",
     "public": true
   }
 }
