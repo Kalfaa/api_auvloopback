@@ -7,8 +7,9 @@ module.exports = function enableAuthentication(server) {
     'ACL',
     'AccessToken',
     'profile',
-    'accepted',
+    'messages',
     'rejected',
+    'accepted'
   ];
 
   ds.setMaxListeners(Infinity);
@@ -17,4 +18,4 @@ module.exports = function enableAuthentication(server) {
     if (err) throw err;
     console.log('Tables [' + models + '] created in ', ds.adapter.name);
   });
-}
+};

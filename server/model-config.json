@@ -33,18 +33,24 @@
   },
   "Role": {
     "dataSource": "db",
-    "public": true
+    "public": false
   },
   "profile": {
     "dataSource": "db",
     "public": true
-  },
-  "accepted": {
+},
+"rejected":{
     "dataSource": "db",
-    "public": false
-  },
-  "rejected": {
+    "public": true
+},
+
+"accepted":{
     "dataSource": "db",
-    "public": false
+    "public": true
+},
+
+  "messages":{
+      "dataSource": "db",
+      "public": true
   }
 }

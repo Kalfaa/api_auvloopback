@@ -39,30 +39,38 @@
   "validations": [],
   "relations": {
     "rejected": {
-      "as": "rejected",
       "type": "hasMany",
       "model": "profile",
-      "through": "rejected",
+      "as": "rejected",
       "foreignKey": "oldId",
+      "through": "rejected",
       "keyThrough": "newId"
     },
     "accepted": {
-      "as": "accepted",
       "type": "hasMany",
       "model": "profile",
-      "through": "accepted",
+      "as": "accepted",
       "foreignKey": "newId",
+      "through": "accepted",
       "keyThrough": "oldId"
+  },
+    "messages":{
+        "type": "hasMany",
+        "model": "profile",
+        "as": "messages",
+        "foreignKey": "sender",
+        "through": "messages",
+        "keyThrough": "receiver"
     }
   },
   "acls": [
-  {
+    {
       "accessType": "READ",
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "ALLOW"
-  },
-  {
+    },
+    {
       "accessType": "WRITE",
       "principalType": "ROLE",
       "principalId": "$everyone",
