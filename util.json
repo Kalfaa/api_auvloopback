@@ -1,5 +1,20 @@
+
+id
+old
+fname
+lname
+birthdate
+photoid
+description
+location
+realm
+username
+password
+email
+emailVerified
+
+//vieux 1
 {
-  "name": "Herve",
   "old": true,
   "fname": "Herve",
   "lname": "dupont",
@@ -9,23 +24,144 @@
   "location": "string",
   "realm": "string",
   "username": "Herve66",
+  "password" : "auv",
   "email": "herve@tkt.fr",
   "emailVerified": true,
-  "password" : "bendo"
 }
 
+//vieux 2
 {
-  "name": "Julien",
-  "old": false,
-  "fname": "Julien",
-  "lname": "blanchard",
+  "old": true,
+  "fname": "Jacques",
+  "lname": "Pierre",
   "birthdate": "2018-10-18T12:47:47.291Z",
   "photoid": "string",
   "description": "string",
   "location": "string",
   "realm": "string",
-  "username": "juju",
-  "email": "juju@tkt.fr",
+  "username": "Jacques1",
+  "password" : "auv",
+  "email": "jacques@mail.fr",
   "emailVerified": true,
-  "password" : "bendo"
+}
+
+//vieux 3
+{
+  "old": true,
+  "fname": "Vladimir",
+  "lname": "Poutine",
+  "birthdate": "2018-10-18T12:47:47.291Z",
+  "photoid": "string",
+  "description": "string",
+  "location": "string",
+  "realm": "string",
+  "username": "Vlad",
+  "password" : "auv",
+  "email": "vlad@mail.fr",
+  "emailVerified": true,
+}
+
+{
+  "old": true,
+  "fname": "Donald",
+  "lname": "Trump",
+  "birthdate": "2018-10-18T12:47:47.291Z",
+  "photoid": "string",
+  "description": "string",
+  "location": "string",
+  "realm": "string",
+  "username": "Covfefe",
+  "password" : "auv",
+  "email": "thedolanjacques@mail.fr",
+  "emailVerified": true,
+}
+
+{
+  "old": true,
+  "fname": "Manu",
+  "lname": "Macron",
+  "birthdate": "2018-10-18T12:47:47.291Z",
+  "photoid": "string",
+  "description": "string",
+  "location": "string",
+  "realm": "string",
+  "username": "Manu",
+  "password" : "auv",
+  "email": "manumacron@mail.fr",
+  "emailVerified": true,
+}
+
+{
+  "old": true,
+  "fname": "Arnold",
+  "lname": "schwarzenegger",
+  "birthdate": "2018-10-18T12:47:47.291Z",
+  "photoid": "string",
+  "description": "string",
+  "location": "string",
+  "realm": "string",
+  "username": "Schwarzi",
+  "password" : "auv",
+  "email": "arnold@mail.fr",
+  "emailVerified": true,
+}
+
+{
+  "old": false,
+  "fname": "Kanye",
+  "lname": "West",
+  "birthdate": "2018-10-18T12:47:47.291Z",
+  "photoid": "string",
+  "description": "string",
+  "location": "string",
+  "realm": "string",
+  "username": "Ye",
+  "password" : "auv",
+  "email": "ye@mail.fr",
+  "emailVerified": true,
+}
+
+{
+  "old": false,
+  "fname": "Kim",
+  "lname": "Jung Un",
+  "birthdate": "2018-10-18T12:47:47.291Z",
+  "photoid": "string",
+  "description": "string",
+  "location": "string",
+  "realm": "string",
+  "username": "Fatkim",
+  "password" : "auv",
+  "email": "fatkim@mail.fr",
+  "emailVerified": true,
+}
+
+{
+  "old": false,
+  "fname": "Bilbon",
+  "lname": "Sacquet",
+  "birthdate": "2018-10-18T12:47:47.291Z",
+  "photoid": "string",
+  "description": "string",
+  "location": "string",
+  "realm": "string",
+  "username": "Bilboquet",
+  "password" : "auv",
+  "email": "bilbon@mail.fr",
+  "emailVerified": true,
+}
+
+{
+  "old": false,
+  "fname": "Harry",
+  "lname": "Potter",
+  "birthdate": "2018-10-18T12:47:47.291Z",
+  "photoid": "string",
+  "description": "string",
+  "location": "string",
+  "realm": "string",
+  "username": "Theboywholived",
+  "password" : "auv",
+  "email": "harry@mail.fr",
+  "emailVerified": true,
 }
